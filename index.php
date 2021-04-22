@@ -8,7 +8,8 @@
 <?php
     $paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
-    $badWordReplace = str_replace("Lorem", "***", $paragraph);
+    $badWordReplace = str_replace($badWord, "***", $paragraph);
+    $badWord = $_GET['Lorem'];
 
 ?>
 
@@ -21,6 +22,8 @@
             <h1>Lunghezza del nuovo paragrafo: <?php echo strlen($paragraph) . " " . "caratteri" ?> </h1>
             <p> <?php echo str_replace("Lorem", "* * *", $paragraph);?> </p>
         </div>
+
+
 
     </body>
 </html>
